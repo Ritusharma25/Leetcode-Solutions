@@ -41,22 +41,31 @@ n == seats.length == students.length
 1 <= n <= 100
 1 <= seats[i], students[j] <= 100"""
 
+# class Solution:
+#     def minMovesToSeat(self, seats: List[int], students: List[int]) -> int:
+#     """ n= seat/standing students
+#         i -> position of the seats
+#         j -> position of the student"""
+#         n = len(seats)
+#         steps = []
+#         seats = sorted(seats)
+#         students = sorted(students)
+#         for i in range(0,n):
+#             if students[i]>seats[i]:
+#                 steps.append(students[i] -seats[i])
+#                 print(steps)
+#             elif students[i]<seats[i]:
+#                 steps.append(seats[i]-students[i])
+#                 print(steps)
+#             else: # students[i] == seats[i]
+#                 steps.append(0)                
+#         return sum(steps)
+
+# Optimised solution:
 class Solution:
     def minMovesToSeat(self, seats: List[int], students: List[int]) -> int:
-    """ n= seat/standing students
-        i -> position of the seats
-        j -> position of the student"""
-        n = len(seats)
-        steps = []
-        seats = sorted(seats)
-        students = sorted(students)
-        for i in range(0,n):
-            if students[i]>seats[i]:
-                steps.append(students[i] -seats[i])
-                print(steps)
-            elif students[i]<seats[i]:
-                steps.append(seats[i]-students[i])
-                print(steps)
-            else: # students[i] == seats[i]
-                steps.append(0)                
-        return sum(steps)
+        # seats = sorted(seats)
+        # students = sorted(students)
+        seats.sort()
+        students.sort()            
+        return sum(abs(s - st) for s, st in zip(seats, students))
