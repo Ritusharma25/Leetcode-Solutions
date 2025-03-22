@@ -41,7 +41,8 @@ Output:
 +------+
 | 4    |
 | 7    |
-+------+"""
++------+
+"""
 
 Select distinct(author_id) as id 
 from views
