@@ -9,7 +9,6 @@
 id is the primary key (column with unique values) for this table.
 Each row of this table contains the id and the name of an employee in a company.
  
-
 Table: EmployeeUNI
 
 +---------------+---------+
