@@ -6,7 +6,6 @@ The DataFrame should have two columns, student_id and age, and be in the same or
 The result format is in the following example.
 
  
-
 Example 1:
  
 Input:
