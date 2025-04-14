@@ -41,6 +41,7 @@ Output:
 Explanation:
 This DataFrame contains 10 rows and 5 columns.
 """"
+
 import pandas as pd
 
 def getDataframeSize(players: pd.DataFrame) -> List[int]:
