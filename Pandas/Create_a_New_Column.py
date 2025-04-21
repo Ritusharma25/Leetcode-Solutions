@@ -27,7 +27,7 @@ DataFrame employees
 | Finn    | 74576  |
 | Thomas  | 24433  |
 +---------+--------+
-Output:
+Output: 
 +---------+--------+--------+
 | name    | salary | bonus  |
 +---------+--------+--------+
