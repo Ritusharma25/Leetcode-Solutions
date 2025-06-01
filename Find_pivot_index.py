@@ -7,7 +7,7 @@ If the index is on the left edge of the array, then the left sum is 0 because th
 
 Return the leftmost pivot index. If no such index exists, return -1.
 
- 
+  
 
 Example 1:
 
