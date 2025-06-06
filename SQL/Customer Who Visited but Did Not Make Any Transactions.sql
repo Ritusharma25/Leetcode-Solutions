@@ -12,7 +12,6 @@ This table contains information about the customers who visited the mall.
  
 
 Table: Transactions
-
 +----------------+---------+
 | Column Name    | Type    |
 +----------------+---------+
