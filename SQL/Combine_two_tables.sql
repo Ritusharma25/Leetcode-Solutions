@@ -1,5 +1,5 @@
 """
-  Table: Person
+Table: Person
 
 +-------------+---------+
 | Column Name | Type    |
